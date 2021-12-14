@@ -1,10 +1,7 @@
-body {
+.gallerySection .image-card .image-card_overview {
   position: relative;
 }
-body .gallerySection .image-card .image-card_overview {
-  position: relative;
-}
-body .gallerySection .image-card .image-card_overview:before {
+.gallerySection .image-card .image-card_overview:before {
   content: "";
   display: block;
   position: absolute;
@@ -15,31 +12,32 @@ body .gallerySection .image-card .image-card_overview:before {
   background: rgba(0, 0, 0, 0.3);
   transition: all 0.4s ease-in-out;
 }
-body .gallerySection .image-card .image-card_overview:hover:before {
+.gallerySection .image-card .image-card_overview:hover:before {
   content: "";
   display: block;
   background: rgba(0, 0, 0, 0.5);
 }
-body .gallerySection .image-card .image-card_overview h1 {
+.gallerySection .image-card .image-card_overview h1 {
   position: absolute;
   top: calc(50% - 26px);
   right: calc(50% - 120px);
 }
-body .image-card_modal.active {
-  position: absolute;
-  content: "";
+.gallerySection .modal_body {
+  max-width: 1140px;
+  margin: 50px auto;
+}
+.gallerySection .modal.active {
+  position: fixed;
   display: block;
   overflow-y: scroll;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+  z-index: 999;
   height: 100vh;
+  width: 100vw;
   background: rgba(0, 0, 0, 0.9);
-}
-body .image-card_modal.active .image-card_modal_body {
-  max-width: 1140px;
-  margin: 50px auto;
 }
 
 /*# sourceMappingURL=gallerySection.css.map */
