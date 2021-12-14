@@ -1,0 +1,10 @@
+.navigation {
+  height: 88px;
+  background: #fff;
+}
+.navigation .default-container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=navigation.css.map */

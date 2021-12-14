@@ -19,12 +19,27 @@
 }
 .gallerySection .image-card .image-card_overview h1 {
   position: absolute;
-  top: calc(50% - 26px);
-  right: calc(50% - 120px);
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .gallerySection .modal_body {
   max-width: 1140px;
   margin: 50px auto;
+}
+@media screen and (max-width: 1024px) {
+  .gallerySection .modal_body {
+    max-width: 720px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .gallerySection .modal_body {
+    max-width: 520px;
+  }
 }
 .gallerySection .modal.active {
   position: fixed;

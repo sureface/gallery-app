@@ -152,13 +152,12 @@ const GallerySection = () => {
 
 
     function toggleActive(index) {
-        console.log(index, "**************************")
         setData({ ...data, activeObject: data.object[index] })
     }
     
     function toggleActiveStyles(index) {
         if (data.object[index] === data.activeObject) {
-            return "modal active";
+            return "modal px-5 active";
         } else{
             return "modal hidden";
         }
@@ -167,15 +166,15 @@ const GallerySection = () => {
     return (
 
          <section className="gallerySection">
-            <div className="grid grid-cols-3 w-full">
+            <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 w-full">
                 {data.object.map((item, index) => {
                     return(
                         <div key={index}>
                             <div className={toggleActiveStyles(index)}>
-                                <MdClose className="text-white text-5xl mx-3 my-3 cursor-pointer fixed top-2 right-2" onClick={closeModal} />
+                                <MdClose className="text-white text-4xl sm:text-4xl md:text-4xl lg:text-4xl xl:text-5xl mx-3 my-3 cursor-pointer fixed top-0 lg:top-2 right-2" onClick={closeModal} />
                                 <div className="modal_body w-full flex flex-col items-center text-center">
-                                    <h2 className="text-white text-2xl font-extrabold mb-5">{item.album[0].headerText}</h2>
-                                    <p className="text-white text-xl mb-5">
+                                    <h2 className="text-white text-2xl sm:text-2xl md:text-2xl lg:text-2xl xl:text-2xl font-extrabold mb-5">{item.album[0].headerText}</h2>
+                                    <p className="text-white text-md sm:text-lg md:text-lg lg:text-xl xl:text-xl mb-5">
                                         {item.album[0].pText}
                                     </p>
                                     <img className="mb-10" src={item.album[0].aUrl1} alt="oops sorry something wrong"/>
@@ -190,7 +189,7 @@ const GallerySection = () => {
                             <div className="image-card w-full">
                                 <div className="image-card_overview cursor-pointer" onClick={() => toggleActive(index)}>
                                     <img className="w-full" src={item.imgUrl} alt="oops sorry something wrong"/>
-                                    <h1 className="text-white text-3xl font-bold">{item.text}</h1>
+                                    <h1 className="text-white text-lg sm:text-xl md:text-xl lg:text-2xl xl:text-3xl font-bold">{item.text}</h1>
                                 </div>
                             </div>
                         </div>
