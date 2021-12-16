@@ -11,19 +11,16 @@
   width: 100vw;
   background: rgba(0, 0, 0, 0.9);
 }
-.modal_body {
-  max-width: 1140px;
-  margin: 50px auto;
+.modal .title-container {
+  width: 80%;
 }
-@media screen and (max-width: 1024px) {
-  .modal_body {
-    max-width: 720px;
+@media (max-width: 550px) {
+  .modal .modal-container {
+    padding: 0 15px;
   }
 }
-@media screen and (max-width: 768px) {
-  .modal_body {
-    max-width: 520px;
-  }
+.modal img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=modal.css.map */

@@ -98,6 +98,8 @@ import album9and7 from "../assets/images/albume9/tg9-7.jpg"
 // modal
 import Modal from "../pages/modal";
 
+// Masonry css
+import Masonry from 'react-masonry-css'
 
 const GallerySection = () => {
 
@@ -222,23 +224,27 @@ const GallerySection = () => {
         setClicked(true);
     }
 
+    const breakpointColumnsObj = {
+        default: 2,
+        550: 1
+    };
+
     return (
         <section className="gallerySection">
             {clicked ? <Modal data={data.activeObject} closeModal={closeModal}/> : ""}
-            <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 w-full">
-                {data.object.map((item, index) => {
-                    return (
-                        <div key={index}>
-                            <div className="image-card w-full">
-                                <div className="image-card_overview cursor-pointer" onClick={() => toggleActive(index)}>
-                                    <img className="w-full" src={item.imgUrl} alt="oops sorry something wrong"/>
-                                    <h1 className="text-white text-lg sm:text-xl md:text-xl lg:text-2xl xl:text-3xl font-bold">{item.title}</h1>
-                                </div>
-                            </div>
+            <Masonry
+                breakpointCols={breakpointColumnsObj}
+                className="my-masonry-grid"
+                columnClassName="my-masonry-grid_column">
+
+                {data.object.map((item, index) => (
+                        <div className="image-card_overview" key={index} onClick={() => toggleActive(index)}>
+                            <img className="w-full" src={item.imgUrl} alt="oops sorry something wrong"/>
+                            <h1 className="text-white text-lg sm:text-xl md:text-xl lg:text-3xl xl:text-5xl font-bold">{item.title}</h1>
                         </div>
-                    );
-                })}
-            </div>
+                ))}
+
+            </Masonry>
         </section>
 
     );

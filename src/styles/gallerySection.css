@@ -1,31 +1,89 @@
-.gallerySection .image-card .image-card_overview {
-  position: relative;
+.gallerySection {
+  /* Style your items */
 }
-.gallerySection .image-card .image-card_overview:before {
-  content: "";
-  display: block;
+.gallerySection .image-card_overview {
+  position: relative;
+  cursor: pointer;
+}
+.gallerySection .image-card_overview h1 {
   position: absolute;
-  top: 0;
-  right: 0;
+  bottom: 2rem;
   left: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.3);
+  opacity: 0;
   transition: all 0.4s ease-in-out;
 }
-.gallerySection .image-card .image-card_overview:hover:before {
+.gallerySection .image-card_overview:before {
   content: "";
   display: block;
-  background: rgba(0, 0, 0, 0.5);
-}
-.gallerySection .image-card .image-card_overview h1 {
   position: absolute;
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
+  background: rgba(0, 0, 0, 0);
+  transition: all 0.4s ease-in-out;
+}
+@media (max-width: 550px) {
+  .gallerySection .image-card_overview:before {
+    background: rgba(0, 0, 0, 0.3);
+  }
+  .gallerySection .image-card_overview h1 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.gallerySection .image-card_overview:hover:before {
+  background: rgba(0, 0, 0, 0.5);
+}
+.gallerySection .image-card_overview:hover h1 {
+  opacity: 1;
+  position: absolute;
+  left: 2rem;
+  bottom: 2rem;
+  transition: all 0.4s ease-in-out;
+}
+@media (max-width: 1024px) {
+  .gallerySection .image-card_overview:hover h1 {
+    left: 2rem;
+    bottom: 2rem;
+  }
+}
+@media (max-width: 550px) {
+  .gallerySection .image-card_overview:hover:before {
+    background: rgba(0, 0, 0, 0.3);
+  }
+  .gallerySection .image-card_overview:hover h1 {
+    bottom: 0;
+    left: 0;
+    opacity: 1;
+  }
+}
+.gallerySection .my-masonry-grid {
+  display: -webkit-box;
+  /* Not needed if autoprefixing */
+  display: -ms-flexbox;
+  /* Not needed if autoprefixing */
   display: flex;
-  align-items: center;
-  justify-content: center;
+  margin-left: -5px;
+  /* gutter size offset */
+  width: auto;
+}
+.gallerySection .my-masonry-grid_column {
+  padding-left: 5px;
+  /* gutter size */
+  background-clip: padding-box;
+}
+.gallerySection .my-masonry-grid_column > div {
+  /* change div to reference your elements you put in <Masonry> */
+  background: grey;
+  margin-bottom: 5px;
 }
 
 /*# sourceMappingURL=gallerySection.css.map */

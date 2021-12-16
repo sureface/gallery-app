@@ -11,15 +11,26 @@
   width: 100vw;
   background: rgba(0,0,0, 0.9);
 
-  &_body{
-    max-width: 1140px;
-    margin: 50px auto;
-
-    @media screen and(max-width: 1024px) {
-      max-width: 720px;
-    }
-    @media screen and(max-width: 768px) {
-      max-width: 520px;
+  .title-container{
+    width: 80%;
+  }
+  .modal-container{
+    @media(max-width: 550px){
+      padding: 0 15px;
     }
   }
+  img{
+    width: 100%;
+  }
+  //&_body{
+  //  max-width: 1140px;
+  //  margin: 50px auto;
+  //
+  //  @media screen and(max-width: 1024px) {
+  //    max-width: 720px;
+  //  }
+  //  @media screen and(max-width: 768px) {
+  //    max-width: 520px;
+  //  }
+  //}
 }
