@@ -105,69 +105,105 @@ const GallerySection = () => {
     const [data, setData] = useState({
         activeObject: null,
         object: [
-            {id: 1, title: "Lovely couples", imgUrl: viewImage1, album: [
+            {
+                id: 1,
+                title: "Lovely couples",
+                imgUrl: viewImage1,
+                album:
                     {
-                     title: "Lovely couples",
-                     subtitle: "Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed.",
-                     images: [album1and1, album1and2, album1and3, album1and4, album1and5, album1and6, album1and7]
+                        title: "Lovely couples",
+                        subtitle: "Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed.",
+                        images: [album1and1, album1and2, album1and3, album1and4, album1and5, album1and6, album1and7]
                     }
-                ]},
-            {id: 2, title: "Winter Wonderland", imgUrl: viewImage2, album: [
+            },
+            {
+                id: 2,
+                title: "Winter Wonderland",
+                imgUrl: viewImage2,
+                album:
                     {
-                     title: "Winter Wonderland",
-                     subtitle: "Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed.",
-                     images: [album2and1, album2and2, album2and3, album2and4, album2and5, album2and6, album2and7]
+                        title: "Winter Wonderland",
+                        subtitle: "Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed.",
+                        images: [album2and1, album2and2, album2and3, album2and4, album2and5, album2and6, album2and7]
                     }
-                ]},
-            {id: 3, title: "Coffee Time", imgUrl: viewImage3, album: [
+            },
+            {
+                id: 3,
+                title: "Coffee Time",
+                imgUrl: viewImage3,
+                album:
                     {
-                     title: "Coffee Time",
-                     subtitle: "Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed.",
-                     images: [album3and1, album3and2, album3and3, album3and4, album3and5, album3and6, album3and7]
+                        title: "Coffee Time",
+                        subtitle: "Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed.",
+                        images: [album3and1, album3and2, album3and3, album3and4, album3and5, album3and6, album3and7]
                     }
-                ]},
-            {id: 4, title: "Lovely Cats", imgUrl: viewImage4, album: [
+            },
+            {
+                id: 4,
+                title: "Lovely Cats",
+                imgUrl: viewImage4,
+                album:
                     {
-                     title: "Lovely Cats",
-                     subtitle: "Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed.",
-                     images: [album4and1, album4and2, album4and3, album4and4, album4and5, album4and6, album4and7]
+                        title: "Lovely Cats",
+                        subtitle: "Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed.",
+                        images: [album4and1, album4and2, album4and3, album4and4, album4and5, album4and6, album4and7]
                     }
-                ]},
-            {id: 5, title: "Beautiful Cottages", imgUrl: viewImage5, album: [
+            },
+            {
+                id: 5,
+                title: "Beautiful Cottages",
+                imgUrl: viewImage5,
+                album:
                     {
-                     title: "Beautiful Cottages",
-                     subtitle: "Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed.",
-                     images: [album5and1, album5and2, album5and3, album5and4, album5and5, album5and6, album5and7]
+                        title: "Beautiful Cottages",
+                        subtitle: "Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed.",
+                        images: [album5and1, album5and2, album5and3, album5and4, album5and5, album5and6, album5and7]
                     }
-                ]},
-            {id: 6, title: "Surreal Shots", imgUrl: viewImage6, album: [
+            },
+            {
+                id: 6,
+                title: "Surreal Shots",
+                imgUrl: viewImage6,
+                album:
                     {
-                     title: "Surreal Shots",
-                     subtitle: "Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed.",
-                     images: [album6and1, album6and2, album6and3, album6and4, album6and5, album6and6, album6and7]
+                        title: "Surreal Shots",
+                        subtitle: "Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed.",
+                        images: [album6and1, album6and2, album6and3, album6and4, album6and5, album6and6, album6and7]
                     }
-                ]},
-            {id: 7, title: "Road Head", imgUrl: viewImage7, album: [
+            },
+            {
+                id: 7,
+                title: "Road Head",
+                imgUrl: viewImage7,
+                album:
                     {
-                     title: "Road Head",
-                     subtitle: "Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed.",
-                     images: [album7and1, album7and2, album7and3, album7and4, album7and5, album7and6, album7and7]
+                        title: "Road Head",
+                        subtitle: "Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed.",
+                        images: [album7and1, album7and2, album7and3, album7and4, album7and5, album7and6, album7and7]
                     }
-                ]},
-            {id: 8, title: "Enchanting Green", imgUrl: viewImage8, album: [
+            },
+            {
+                id: 8,
+                title: "Enchanting Green",
+                imgUrl: viewImage8,
+                album:
                     {
-                     title: "Enchanting Green",
-                     subtitle: "Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed.",
-                     images: [album8and1, album8and2, album8and3, album8and4, album8and5, album8and6, album8and7]
+                        title: "Enchanting Green",
+                        subtitle: "Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed.",
+                        images: [album8and1, album8and2, album8and3, album8and4, album8and5, album8and6, album8and7]
                     }
-                ]},
-            {id: 9, title: "Charismatic Doors", imgUrl: viewImage9, album: [
+            },
+            {
+                id: 9,
+                title: "Charismatic Doors",
+                imgUrl: viewImage9,
+                album:
                     {
-                     title: "Charismatic Doors",
-                     subtitle: "Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed.",
-                     images: [album9and1, album9and2, album9and3, album9and4, album9and5, album9and6, album9and7]
+                        title: "Charismatic Doors",
+                        subtitle: "Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed.",
+                        images: [album9and1, album9and2, album9and3, album9and4, album9and5, album9and6, album9and7]
                     }
-                ]},
+            },
         ]
     })
 
@@ -187,8 +223,8 @@ const GallerySection = () => {
     }
 
     return (
-         <section className="gallerySection">
-             { clicked ? <Modal data={data.activeObject} closeModal={closeModal}/> : ""}
+        <section className="gallerySection">
+            {clicked ? <Modal data={data.activeObject} closeModal={closeModal}/> : ""}
             <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 w-full">
                 {data.object.map((item, index) => {
                     return (
