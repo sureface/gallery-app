@@ -20,19 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="92606b3d-3ac3-4af1-b737-4c558120874d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.firebaserc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/firebase.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/modal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/modal.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/modal.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/gallerySection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/gallerySection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/gallerySection.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/gallerySection.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/gallerySection.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/gallerySection.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/gallerySection.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/gallerySection.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/home.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/home.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/modal.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/modal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/modal.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +73,7 @@
       <updated>1639391609681</updated>
       <workItem from="1639391611012" duration="41570000" />
       <workItem from="1639558084870" duration="11189000" />
-      <workItem from="1639636940433" duration="2454000" />
+      <workItem from="1639636940433" duration="4159000" />
     </task>
     <servers />
   </component>

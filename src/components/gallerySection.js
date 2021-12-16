@@ -105,41 +105,68 @@ const GallerySection = () => {
     const [data, setData] = useState({
         activeObject: null,
         object: [
-            {id: 1, text: "Lovely couples", imgUrl: viewImage1, album: [
-                    {headerText: "Lovely couples", pText: "Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed.",
-                    aUrl1: album1and1, aUrl2: album1and2, aUrl3: album1and3, aUrl4: album1and4, aUrl5: album1and5, aUrl6: album1and6, aUrl7: album1and7}
+            {id: 1, title: "Lovely couples", imgUrl: viewImage1, album: [
+                    {
+                     title: "Lovely couples",
+                     subtitle: "Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed.",
+                     images: [album1and1, album1and2, album1and3, album1and4, album1and5, album1and6, album1and7]
+                    }
                 ]},
-            {id: 2, text: "Winter Wonderland", imgUrl: viewImage2, album: [
-                    {headerText: "Winter Wonderland", pText: "Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed.",
-                    aUrl1: album2and1, aUrl2: album2and2, aUrl3: album2and3, aUrl4: album2and4, aUrl5: album2and5, aUrl6: album2and6, aUrl7: album2and7}
+            {id: 2, title: "Winter Wonderland", imgUrl: viewImage2, album: [
+                    {
+                     title: "Winter Wonderland",
+                     subtitle: "Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed.",
+                     images: [album2and1, album2and2, album2and3, album2and4, album2and5, album2and6, album2and7]
+                    }
                 ]},
-            {id: 3, text: "Coffee Time", imgUrl: viewImage3, album: [
-                    {headerText: "Coffee Time", pText: "Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed.",
-                    aUrl1: album3and1, aUrl2: album3and2, aUrl3: album3and3, aUrl4: album3and4, aUrl5: album3and5, aUrl6: album3and6, aUrl7: album3and7}
+            {id: 3, title: "Coffee Time", imgUrl: viewImage3, album: [
+                    {
+                     title: "Coffee Time",
+                     subtitle: "Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed.",
+                     images: [album3and1, album3and2, album3and3, album3and4, album3and5, album3and6, album3and7]
+                    }
                 ]},
-            {id: 4, text: "Lovely Cats", imgUrl: viewImage4, album: [
-                    {headerText: "Lovely Cats", pText: "Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed.",
-                    aUrl1: album4and1, aUrl2: album4and2, aUrl3: album4and3, aUrl4: album4and4, aUrl5: album4and5, aUrl6: album4and6, aUrl7: album4and7}
+            {id: 4, title: "Lovely Cats", imgUrl: viewImage4, album: [
+                    {
+                     title: "Lovely Cats",
+                     subtitle: "Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed.",
+                     images: [album4and1, album4and2, album4and3, album4and4, album4and5, album4and6, album4and7]
+                    }
                 ]},
-            {id: 5, text: "Beautiful Cottages", imgUrl: viewImage5, album: [
-                    {headerText: "Beautiful Cottages", pText: "Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed.",
-                    aUrl1: album5and1, aUrl2: album5and2, aUrl3: album5and3, aUrl4: album5and4, aUrl5: album5and5, aUrl6: album5and6, aUrl7: album5and7}
+            {id: 5, title: "Beautiful Cottages", imgUrl: viewImage5, album: [
+                    {
+                     title: "Beautiful Cottages",
+                     subtitle: "Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed.",
+                     images: [album5and1, album5and2, album5and3, album5and4, album5and5, album5and6, album5and7]
+                    }
                 ]},
-            {id: 6, text: "Surreal Shots", imgUrl: viewImage6, album: [
-                    {headerText: "Surreal Shots", pText: "Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed.",
-                    aUrl1: album6and1, aUrl2: album6and2, aUrl3: album6and3, aUrl4: album6and4, aUrl5: album6and5, aUrl6: album6and6, aUrl7: album6and7}
+            {id: 6, title: "Surreal Shots", imgUrl: viewImage6, album: [
+                    {
+                     title: "Surreal Shots",
+                     subtitle: "Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed.",
+                     images: [album6and1, album6and2, album6and3, album6and4, album6and5, album6and6, album6and7]
+                    }
                 ]},
-            {id: 7, text: "Road Head", imgUrl: viewImage7, album: [
-                    {headerText: "Road Head", pText: "Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed.",
-                    aUrl1: album7and1, aUrl2: album7and2, aUrl3: album7and3, aUrl4: album7and4, aUrl5: album7and5, aUrl6: album7and6, aUrl7: album7and7}
+            {id: 7, title: "Road Head", imgUrl: viewImage7, album: [
+                    {
+                     title: "Road Head",
+                     subtitle: "Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed.",
+                     images: [album7and1, album7and2, album7and3, album7and4, album7and5, album7and6, album7and7]
+                    }
                 ]},
-            {id: 8, text: "Enchanting Green", imgUrl: viewImage8, album: [
-                    {headerText: "Enchanting Green", pText: "Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed.",
-                    aUrl1: album8and1, aUrl2: album8and2, aUrl3: album8and3, aUrl4: album8and4, aUrl5: album8and5, aUrl6: album8and6, aUrl7: album8and7}
+            {id: 8, title: "Enchanting Green", imgUrl: viewImage8, album: [
+                    {
+                     title: "Enchanting Green",
+                     subtitle: "Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed.",
+                     images: [album8and1, album8and2, album8and3, album8and4, album8and5, album8and6, album8and7]
+                    }
                 ]},
-            {id: 9, text: "Charismatic Doors", imgUrl: viewImage9, album: [
-                    {headerText: "Charismatic Doors", pText: "Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed.",
-                    aUrl1: album9and1, aUrl2: album9and2, aUrl3: album9and3, aUrl4: album9and4, aUrl5: album9and5, aUrl6: album9and6, aUrl7: album9and7}
+            {id: 9, title: "Charismatic Doors", imgUrl: viewImage9, album: [
+                    {
+                     title: "Charismatic Doors",
+                     subtitle: "Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed.",
+                     images: [album9and1, album9and2, album9and3, album9and4, album9and5, album9and6, album9and7]
+                    }
                 ]},
         ]
     })
@@ -169,7 +196,7 @@ const GallerySection = () => {
                             <div className="image-card w-full">
                                 <div className="image-card_overview cursor-pointer" onClick={() => toggleActive(index)}>
                                     <img className="w-full" src={item.imgUrl} alt="oops sorry something wrong"/>
-                                    <h1 className="text-white text-lg sm:text-xl md:text-xl lg:text-2xl xl:text-3xl font-bold">{item.text}</h1>
+                                    <h1 className="text-white text-lg sm:text-xl md:text-xl lg:text-2xl xl:text-3xl font-bold">{item.title}</h1>
                                 </div>
                             </div>
                         </div>
