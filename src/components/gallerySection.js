@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 
 //styles
 import "../styles/gallerySection.scss";
@@ -207,10 +207,24 @@ const GallerySection = () => {
                     }
             },
         ]
-    })
+    });
+
+    //remove btn
+    const [removeBtn, setRemoveBtn] = useState(false);
 
     // check click state
     const [clicked, setClicked] = useState(false);
+
+    // limit state
+    const [limit, setLimit] = useState(3);
+
+    // set limit
+    const sliceObj = data.object.slice(0, limit);
+
+    // load more btn
+    const loadMore = () => {
+        setLimit(limit + 3);
+    };
 
     // closeModal function
     function closeModal() {
@@ -229,6 +243,12 @@ const GallerySection = () => {
         550: 1
     };
 
+    useEffect(() => {
+        if (data.object.length <= limit){
+            setRemoveBtn(true);
+        }
+    }, [limit]);
+
     return (
         <section className="gallerySection">
             {clicked ? <Modal data={data.activeObject} closeModal={closeModal}/> : ""}
@@ -237,7 +257,7 @@ const GallerySection = () => {
                 className="my-masonry-grid"
                 columnClassName="my-masonry-grid_column">
 
-                {data.object.map((item, index) => (
+                {sliceObj.map((item, index) => (
                         <div className="image-card_overview" key={index} onClick={() => toggleActive(index)}>
                             <img className="w-full" src={item.imgUrl} alt="oops sorry something wrong"/>
                             <h1 className="text-white text-lg sm:text-xl md:text-xl lg:text-3xl xl:text-5xl font-bold">{item.title}</h1>
@@ -245,6 +265,12 @@ const GallerySection = () => {
                 ))}
 
             </Masonry>
+
+            {removeBtn ? "" :
+            <div className="w-full flex items-center justify-center py-20">
+                <button className="text-black border border-black rounded-full px-6 py-2" onClick={loadMore}>show more</button>
+            </div>
+            }
         </section>
 
     );
