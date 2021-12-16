@@ -20,17 +20,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="92606b3d-3ac3-4af1-b737-4c558120874d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/images/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/infoSection.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/navigation.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.firebaserc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/firebase.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/modal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/modal.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/modal.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/gallerySection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/gallerySection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/gallerySection.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/gallerySection.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/gallerySection.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/gallerySection.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/gallerySection.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/gallerySection.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/home.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/home.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/modal.css.map" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +80,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1639391609681</updated>
-      <workItem from="1639391611012" duration="38002000" />
+      <workItem from="1639391611012" duration="41570000" />
+      <workItem from="1639558084870" duration="11189000" />
+      <workItem from="1639636940433" duration="2454000" />
     </task>
     <servers />
   </component>
@@ -95,6 +99,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
