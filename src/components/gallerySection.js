@@ -216,7 +216,7 @@ const GallerySection = () => {
     const [clicked, setClicked] = useState(false);
 
     // limit state
-    const [limit, setLimit] = useState(3);
+    const [limit, setLimit] = useState(6);
 
     // set limit
     const sliceObj = data.object.slice(0, limit);

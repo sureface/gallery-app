@@ -6,5 +6,8 @@
   max-width: 1140px;
   margin: 0 auto;
 }
+.navigation a {
+  color: #212121;
+}
 
 /*# sourceMappingURL=navigation.css.map */
