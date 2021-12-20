@@ -6,6 +6,9 @@ const Modal = (props) => {
     const data = props.data
     const closeModal = props.closeModal
 
+    console.log(data, "modal");
+    console.log(closeModal, "closeModal")
+
     return (
         <div>
             <div className="modal">
@@ -14,19 +17,15 @@ const Modal = (props) => {
                 </div>
                 <div className="w-full flex flex-col items-center text-center">
                     <div className="title-container">
-                        <h2 className="text-black text-2xl sm:text-2xl md:text-2xl lg:text-2xl xl:text-2xl font-extrabold mb-5 mt-10">{data.album.title}</h2>
+                        <h2 className="text-black text-2xl sm:text-2xl md:text-2xl lg:text-2xl xl:text-2xl font-extrabold mb-5 mt-10">{data.Heading}</h2>
                         <p className="text-black text-md sm:text-lg md:text-lg lg:text-xl xl:text-xl mb-5">
-                            {data.album.subtitle}
+                            {data.Description}
                         </p>
                     </div>
                     <div className="modal-container">
-                        <img className="mb-10" src={data.album.images[0]} alt="oops sorry something wrong"/>
-                        <img className="mb-10" src={data.album.images[1]} alt="oops sorry something wrong"/>
-                        <img className="mb-10" src={data.album.images[2]} alt="oops sorry something wrong"/>
-                        <img className="mb-10" src={data.album.images[3]} alt="oops sorry something wrong"/>
-                        <img className="mb-10" src={data.album.images[4]} alt="oops sorry something wrong"/>
-                        <img className="mb-10" src={data.album.images[5]} alt="oops sorry something wrong"/>
-                        <img className="mb-10" src={data.album.images[6]} alt="oops sorry something wrong"/>
+                        {data.Images.map((item, index) => (
+                            <img className="mb-10" src={process.env["REACT_APP_API"]+ "/" + item.path} key={index} alt="oops sorry something wrong"/>
+                        ))}
                     </div>
                 </div>
             </div>

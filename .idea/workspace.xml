@@ -20,24 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="92606b3d-3ac3-4af1-b737-4c558120874d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.github/workflows/firebase-hosting-pull-request.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/firebase-debug.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/footer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/footer.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/footer.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/testGallery.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/gallerySection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/gallerySection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/modal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/modal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/modal.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/modal.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/modal.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/modal.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/navigation.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/navigation.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/navigation.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/navigation.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/navigation.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/navigation.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/gallerySection.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/gallerySection.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/gallerySection.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/gallerySection.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/gallerySection.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/gallerySection.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +81,7 @@
       <updated>1639391609681</updated>
       <workItem from="1639391611012" duration="41570000" />
       <workItem from="1639558084870" duration="11189000" />
-      <workItem from="1639636940433" duration="29196000" />
+      <workItem from="1639636940433" duration="57868000" />
     </task>
     <servers />
   </component>
@@ -118,10 +112,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="629" y="318" key="EditFileWatcherDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1639396302583" />
-    <state x="780" y="242" key="RollbackChangesDialog" timestamp="1639650783064">
+    <state x="780" y="242" key="RollbackChangesDialog" timestamp="1639997969756">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="780" y="242" key="RollbackChangesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1639650783064" />
+    <state x="780" y="242" key="RollbackChangesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1639997969756" />
     <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1639486503315">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

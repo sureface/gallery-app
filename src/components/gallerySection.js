@@ -234,6 +234,10 @@ const GallerySection = () => {
 
     //  clicked album
     function toggleActive(index) {
+        console.log(index,  "---------------------------------------------------")
+        console.log(data, "data//////////");
+        console.log(data.activeObject, "************acctiv");
+
         setData({...data, activeObject: data.object[index]});
         setClicked(true);
     }
