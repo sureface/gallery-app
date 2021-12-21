@@ -102,10 +102,16 @@
   background: #ffffff;
 }
 .fancy-wrapper .wrap {
+  position: relative;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.fancy-wrapper .wrap .spinner-wrap {
+  position: absolute;
+  top: 0;
+  right: calc(50% - 100px);
 }
 .fancy-wrapper .wrap .spinner-wrap .spinner {
   height: 100px;

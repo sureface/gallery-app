@@ -26,8 +26,7 @@ const TestGallery = () => {
 
         data.album = resData
 
-        console.log(data);
-        setLoading(false);
+        setLoading(true);
     }
 
     // run this function when page updated

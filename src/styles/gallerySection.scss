@@ -109,12 +109,16 @@
   background: #ffffff;
 
   .wrap {
+    position: relative;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 
     .spinner-wrap {
+      position: absolute;
+      top: 0;
+      right: calc(50% - 100px);
       .spinner {
         height: 100px;
         width: 100px;
