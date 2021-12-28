@@ -10,15 +10,14 @@ const TestGallery = () => {
 
     const [loading, setLoading] = useState(true);
     const [selected, setSelected] = useState(false);
-    const [showMore, setShowMore] = useState(false);
-    const [limit, setLimit] = useState(9);
+    const [limit, setLimit] = useState(10);
 
     const [data, setData] = useState({
         selected: null,
         album: []
     });
 
-    // fetching data from api
+    // fetching data from api +++ &limit=${limit}
     const fetchData = async () => {
         setLoading(true);
         const response = await axios.get(`${process.env["REACT_APP_API"]}/api/collections/get/album?token=73ad18f6896b8a47f97bfe3f824958`);
@@ -34,19 +33,9 @@ const TestGallery = () => {
         fetchData();
     }, [] );
 
-    // set limit
-    const sliceData = data.album.slice(0, limit);
-
-    // load more btn
-    const loadMore = () => {
-        setLimit(limit + 1);
-
-    };
-    useEffect(() => {
-        if (data.album.length <= limit){
-            setShowMore(true);
-        }
-    }, [limit]);
+    function loadMore() {
+        setLimit((prev) => prev + 10);
+    }
 
     // selected data
     function selectedAlbum(index) {
@@ -58,13 +47,12 @@ const TestGallery = () => {
     if (loading) {
         return (
             <div className="fancy-wrapper">
-                <div className="wrap">
-                    <div className="spinner-wrap">
-                        <div className="spinner">
-                            <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
-                        </div>
-                    </div>
+                <div className="loader">
+                    <div className="inner one"></div>
+                    <div className="inner two"></div>
+                    <div className="inner three"></div>
                 </div>
+
             </div>
         )
     }
@@ -93,7 +81,7 @@ const TestGallery = () => {
                 className="my-masonry-grid"
                 columnClassName="my-masonry-grid_column">
 
-                {sliceData.map((item, index) => (
+                {data.album.slice(0, limit).map((item, index) => (
                     <div className="image-card_overview" key={index} onClick={() => selectedAlbum(index)}>
                         <img className="w-full" src={process.env["REACT_APP_API"] + "/" + item.Thumbnail.path}
                              alt="oops sorry something wrong"/>
@@ -103,10 +91,12 @@ const TestGallery = () => {
 
             </Masonry>
 
-            {showMore ? "" :
-                <div className="w-full flex items-center justify-center py-20">
-                    <button className="text-black border border-black rounded-full px-6 py-2" onClick={loadMore}>show more</button>
-                </div>
+            {limit < data.album.length &&
+            <div className="w-full flex items-center justify-center py-20">
+                <button className="text-black border border-black rounded-full px-6 py-2"
+                        onClick={() => loadMore()}>show more
+                </button>
+            </div>
             }
 
         </section>

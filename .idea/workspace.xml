@@ -20,7 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="92606b3d-3ac3-4af1-b737-4c558120874d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/testGallery.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/testGallery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/gallerySection.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/gallerySection.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/gallerySection.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/gallerySection.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/gallerySection.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/gallerySection.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +54,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../gallery-admin" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -70,7 +75,16 @@
       <updated>1639391609681</updated>
       <workItem from="1639391611012" duration="41570000" />
       <workItem from="1639558084870" duration="11189000" />
-      <workItem from="1639636940433" duration="62297000" />
+      <workItem from="1639636940433" duration="63042000" />
+      <workItem from="1640094856883" duration="187000" />
+      <workItem from="1640096869737" duration="1342000" />
+      <workItem from="1640168603976" duration="55000" />
+      <workItem from="1640169757369" duration="649000" />
+      <workItem from="1640590987362" duration="19000" />
+      <workItem from="1640623386533" duration="59000" />
+      <workItem from="1640625455615" duration="163000" />
+      <workItem from="1640625747661" duration="903000" />
+      <workItem from="1640675640452" duration="12945000" />
     </task>
     <servers />
   </component>
@@ -101,6 +115,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="629" y="318" key="EditFileWatcherDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1639396302583" />
+    <state x="740" y="295" key="FileChooserDialogImpl" timestamp="1640095042692">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="740" y="295" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1640095042692" />
     <state x="780" y="242" key="RollbackChangesDialog" timestamp="1639997969756">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
