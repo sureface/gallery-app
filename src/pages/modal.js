@@ -22,7 +22,7 @@ const Modal = (props) => {
                             {data.Description}
                         </p>
                     </div>
-                    <div className="modal-container">
+                    <div className="modal-container" style={{width: 99+'%'}}>
                         {data.Images.map((item, index) => (
                             <img className="mb-10" src={process.env["REACT_APP_API"]+ "/" + item.path} key={index} alt="oops sorry something wrong"/>
                         ))}

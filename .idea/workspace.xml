@@ -21,10 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="92606b3d-3ac3-4af1-b737-4c558120874d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/testGallery.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/testGallery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/gallerySection.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/gallerySection.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/gallerySection.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/gallerySection.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/gallerySection.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/gallerySection.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/gallerySection.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/modal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/modal.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +83,13 @@
       <workItem from="1640623386533" duration="59000" />
       <workItem from="1640625455615" duration="163000" />
       <workItem from="1640625747661" duration="903000" />
-      <workItem from="1640675640452" duration="12945000" />
+      <workItem from="1640675640452" duration="13117000" />
+      <workItem from="1640696747049" duration="214000" />
+      <workItem from="1640697100375" duration="7000" />
+      <workItem from="1640702132399" duration="831000" />
+      <workItem from="1640703143483" duration="1760000" />
+      <workItem from="1640880316733" duration="20000" />
+      <workItem from="1640880574120" duration="183000" />
     </task>
     <servers />
   </component>
