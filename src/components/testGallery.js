@@ -20,7 +20,7 @@ const TestGallery = () => {
     // fetching data from api +++ &limit=${limit}
     const fetchData = async () => {
         setLoading(true);
-        const response = await axios.get(`${process.env["REACT_APP_API"]}/api/collections/get/album?token=73ad18f6896b8a47f97bfe3f824958`);
+        const response = await axios.get(`${process.env["REACT_APP_API"]}/api/collections/get/album?token=73ad18f6896b8a47f97bfe3f824958&sort[Order]=1`);
         const resData = await response.data.entries;
 
         data.album = resData
